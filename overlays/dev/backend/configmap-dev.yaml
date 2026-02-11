@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bolrea-backend-config
+data:
+  ENV: development
+  SQL_ECHO: "true"

@@ -1,0 +1,6 @@
+resources:
+  - ../../../base/backend
+
+patchesStrategicMerge:
+  - patch-deployment.yaml
+  - configmap-dev.yaml

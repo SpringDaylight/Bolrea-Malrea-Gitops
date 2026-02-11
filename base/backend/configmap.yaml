@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bolrea-backend-config
+data:
+  AWS_REGION: ap-northeast-2
+  RDS_HOST: movie-dev-db.cfyyuse8wwfa.ap-northeast-2.rds.amazonaws.com
+  RDS_PORT: "5432"
+  RDS_DATABASE: movie
+  RDS_USER: postgres
+  RDS_SECRET_ARN: arn:aws:secretsmanager:ap-northeast-2:416963226971:secret:movie-dev-rds
