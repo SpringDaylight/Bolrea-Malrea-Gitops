@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/SpringDaylight/Bolrea-Malrea-Gitops.git
-    targetRevision: dev
+    targetRevision: main
     path: overlays/dev/backend
 
   destination:
