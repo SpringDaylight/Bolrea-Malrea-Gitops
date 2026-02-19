@@ -8,4 +8,4 @@ data:
   RDS_PORT: "5432"
   RDS_DATABASE: movie
   RDS_USER: postgres
-  RDS_SECRET_ARN: arn:aws:secretsmanager:ap-northeast-2:416963226971:secret:movie-dev-rds
+  RDS_SECRET_ARN: arn:aws:secretsmanager:ap-northeast-2:416963226971:secret:rds!db-f3aa3685-4bca-4982-bae8-c628e185fdf2-078IVh
