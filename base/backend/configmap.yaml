@@ -3,6 +3,7 @@ kind: ConfigMap
 metadata:
   name: bolrea-backend-config
 data:
+  ENV: production
   AWS_REGION: ap-northeast-2
   RDS_HOST: movie-dev-db.cfyyuse8wwfa.ap-northeast-2.rds.amazonaws.com
   RDS_PORT: "5432"
