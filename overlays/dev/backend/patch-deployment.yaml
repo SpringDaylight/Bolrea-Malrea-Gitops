@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 416963226971.dkr.ecr.ap-northeast-2.amazonaws.com/bolrea-malrea-backend:dev-a8c15fd
+          image: 416963226971.dkr.ecr.ap-northeast-2.amazonaws.com/bolrea-malrea-backend:dev-0894249
