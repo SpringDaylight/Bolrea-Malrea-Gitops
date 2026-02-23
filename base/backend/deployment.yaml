@@ -27,3 +27,5 @@ spec:
                 name: bolrea-backend-config
             - secretRef:
                 name: bolrea-backend-secret
+            - secretRef:
+                name: backend-jwt-secret
