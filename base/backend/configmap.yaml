@@ -10,3 +10,9 @@ data:
   RDS_DATABASE: movie
   RDS_USER: postgres
   RDS_SECRET_ARN: arn:aws:secretsmanager:ap-northeast-2:416963226971:secret:rds!db-f3aa3685-4bca-4982-bae8-c628e185fdf2-078IVh
+  # Redis (ElastiCache) 설정
+  REDIS_HOST: bolrea-malrea-redis.s5wbmi.0001.apn2.cache.amazonaws.com
+  REDIS_PORT: "6379"
+  REDIS_DB: "0"
+  REDIS_ENABLED: "true"
+  REDIS_SSL: "false"
