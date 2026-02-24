@@ -5,3 +5,4 @@ metadata:
 data:
   ENV: development
   SQL_ECHO: "true"
+  JWT_SECRET_ARN: "arn:aws:secretsmanager:ap-northeast-2:416963226971:secret:movie-dev/jwt-secret-Cnoe9I"
