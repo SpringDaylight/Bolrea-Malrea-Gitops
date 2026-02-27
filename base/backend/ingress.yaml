@@ -11,8 +11,19 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
+    # 커스텀 도메인 (HTTPS)
     - host: api.bolreamalrea.com
       http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bolrea-malrea-backend
+                port:
+                  number: 80
+    # 기본 ALB 주소 (HTTP) - host 없음
+    - http:
         paths:
           - path: /
             pathType: Prefix
