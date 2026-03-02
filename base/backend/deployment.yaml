@@ -27,11 +27,3 @@ spec:
                 name: bolrea-backend-config
             - secretRef:
                 name: bolrea-backend-secret
-            - secretRef:
-                name: rds-credentials  # External Secrets에서 자동 동기화
-          env:
-            - name: RDS_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: rds-credentials
-                  key: password
