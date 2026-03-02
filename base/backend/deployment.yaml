@@ -6,7 +6,7 @@ metadata:
     app: bolrea-malrea-backend
 spec:
   revisionHistoryLimit: 3
-  replicas: 1
+  replicas: 6
   selector:
     matchLabels:
       app: bolrea-malrea-backend
@@ -27,3 +27,11 @@ spec:
                 name: bolrea-backend-config
             - secretRef:
                 name: bolrea-backend-secret
+            - secretRef:
+                name: rds-credentials  # External Secrets에서 자동 동기화
+          env:
+            - name: RDS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: rds-credentials
+                  key: password
