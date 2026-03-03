@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: bolrea-malrea-backend
 spec:
-  replicas: 1
+  replicas: 6
   template:
     spec:
       containers:
